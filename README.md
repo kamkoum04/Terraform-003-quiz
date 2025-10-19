@@ -39,9 +39,6 @@ How the app imports the JSON
 
 If you need the JSON hosted elsewhere (CORS), either configure the server to allow CORS or update the `fetch()` URL in `app.js` to point to the remote URL.
 
-Commit & push
-
-- I can commit this README and push it to the remote `origin/main`. If you'd like that, say "commit and push README" and I'll do it for you.
 
 Troubleshooting
 
