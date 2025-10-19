@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terraform Associate Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">Terraform Study</div>
+        <div class="search-container">
+          <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input 
+            type="text" 
+            class="search-input" 
+            id="searchInput" 
+            placeholder="Search questions..."
+          >
+        </div>
+        <div class="stats">
+          <span id="progressText">0 / 359</span>
+          <span id="answeredText">0 answered</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="controls">
+        <!-- Added file upload button -->
+        <label for="fileInput" class="btn btn-primary" style="cursor: pointer;">
+          📁 Load JSON File
+        </label>
+        <input type="file" id="fileInput" accept=".json" style="display: none;">
+        <!-- </CHANGE> -->
+        <button class="btn" id="viewModeBtn">Card View</button>
+        <button class="btn" id="filterUnanswered">Show Unanswered</button>
+        <button class="btn" id="shuffleBtn">Shuffle</button>
+        <button class="btn" id="resetBtn">Reset Progress</button>
+      </div>
+
+      <div id="questionsContainer">
+        <div class="loading">
+          <div class="spinner"></div>
+          <p>Loading questions...</p>
+        </div>
+      </div>
+
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
